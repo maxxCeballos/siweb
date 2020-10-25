@@ -1,0 +1,118 @@
+.contFormulario {
+    position: absolute;
+    /*width: 1112px;
+    height: 809px;*/
+    width: 80%;
+    height: auto;
+    left: 290px;
+    margin-top: 70px;
+    background: #F7F7F7;
+    border-radius: 5px;
+}
+
+.fila {
+    /*position: relative;*/
+    /*display: flex;
+    justify-content: space-between;*/
+    margin: 15px 15px;
+    align-content: center;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    padding: 5px 0px 5px 10px;
+    width: 166px;
+    height: 30px;
+    background: #E1E1E1;
+    font-size: 15px;
+    font-family: Roboto;
+    border-radius: 5px;
+}
+
+input {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    padding: 0px 15px;
+    /*margin: 8px 0;*/
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.enLinea {
+    margin-left: 13px;
+}
+
+.nombreEscuela {
+    width: fit-content;
+    padding-right: 15px;
+}
+
+.fecha {
+    width: 160px;
+    padding-right: 5px;
+}
+
+.contSacramentos {
+    position: relative;
+    width: 608px;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.titSacr {
+    padding-left: 15px;
+}
+
+.sacramento {
+    position: relative;
+    /*width: 573px;
+    height: 91px;*/
+    margin: 10px 15px;
+    padding: 0.5px 0px;
+    background: #D6D6D6;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.nombreSacr {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.contFoto2 {
+    margin-right: 15px;
+    margin-top: 15px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: auto;
+    height: auto;
+}
+
+/*.test {    
+    width: 100px;
+}*/
+
+.fotoAlumno {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    opacity: 0.5;
+}
