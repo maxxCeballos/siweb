@@ -1,9 +1,12 @@
 nav {
     position: absolute;
-    /*background-color: #ff000018;*/
+    /*background-color: rgb(24,67,141);*/
+    /*background-color: rgb(30 83 174);*/
+    /*background-color: rgb(28 74 166);*/
+    background-color: rgba(24,90,169,1);
     height: 100%;
     width: 273px;
-    border: 1px solid #000000;    
+    border: 1px solid #000000;        
 }
 
 ul {
@@ -16,10 +19,10 @@ li {
     border-bottom: 0.5px solid black;
     vertical-align: top;
     width: 100%;    
-    position: relative;
+    position: relative;    
 }
 
-.cont_item_nav {
+.cont_item_nav {    
     position: absolute;
     width: 31px;
     height: 31px;
@@ -49,5 +52,5 @@ li {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.01em;
-    color: #000000;
+    color: white;
 }

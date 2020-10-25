@@ -15,7 +15,11 @@ html, body {
 body {
     width: auto;
     height: auto;
-    background: rgba(255, 255, 255, 1);
+    /*background: rgb(24,67,141);*/
+    /*background-color: rgba(71,122,209, 0.65);*/
+    /*background-color: rgba(28,74,166,0.4);*/
+    background-color: rgba(24,90,169,0.1);
+    /*background: rgb(15,67,126);*/
 }
 
 .contAux {
@@ -33,7 +37,9 @@ body {
     display: inline-block;
     width: 300px;
     height: 50px;
-    background: #E1E1E1;
+    /*background: #E1E1E1;*/
+    background-color: rgba(155,190,231,0.7);
+    /*background-color: rgba(35,170,104, 0.3);*/
     border-radius: 5px;
 }
 
@@ -60,7 +66,8 @@ body {
 .boton {
     width: 157px;
     height: 39px;
-    background-color: #000000;
+    /*background-color: #000000;*/
+    background-color: rgb(24 90 169);
     border-radius: 5px;
     font-family: Roboto;
     font-size: 15px;

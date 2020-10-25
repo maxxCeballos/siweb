@@ -5,9 +5,9 @@ header {
     top: 0px;
     left: 0px;    
     overflow: hidden;
-    background: rgba(196, 196, 196, 1);
+    background:rgb(31,155,95);
     position: relative;
-    display: block;
+    display: block;    
 }
 
 .contUsr {
@@ -76,8 +76,8 @@ header {
 
 .contNombInst {
     width: 386px;
-    height: 64px;
-    background: rgba(232, 232, 232, 1);
+    height: 64px;    
+    background-color: rgb(34 170 104);    
     /*overflow: hidden;*/
     position: relative;
     top: 0%;
@@ -100,7 +100,7 @@ header {
 .contInfoUtil {
     width: 411px;
     height: 41px;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.87);
     position: absolute;
     /*poner padding sino*/
     /*revisar el absolute,
@@ -115,8 +115,7 @@ header {
     position: absolute;
     top: 12px;
     left: 0%;
-    font-family: Roboto;
-    font-weight: Regular;
+    font-family: Roboto;    
     font-size: 12px;
     text-align: left;
 }
@@ -125,6 +124,7 @@ header {
     width: 31px;
     height: 31px;
     background: rgba(252, 249, 249, 1);
+    border-radius: 5px;
     position: absolute;
     top: 16px;
     right: 15px;
