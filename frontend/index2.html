@@ -54,7 +54,7 @@
                 <div class="cont_item_nav">
                     <img src="./assets/imgs/item/item1.png" alt="" class="item_nav">
                 </div>
-                <span class="texto_nav">Inscribir Alumno</span>
+                <span class="texto_nav">Inscribir Responsable</span>
             </li>
             <li>
                 <div class="cont_item_nav">
@@ -86,15 +86,13 @@
     <!--------------TITULO PAGINA-------------->
     <div class="contAux">
         <div class="contTitulo">
-            <span class="titulo">Inscribir Alumno</span>
+            <span class="titulo">Datos Responsable</span>
         </div>
 
         <!--BOTONES IFAZ-->
         <div class="botones">
-            <button class="boton">Completar Familia</button>
-            <button class="boton">Continuar</button>
+            <button class="boton">Finalizar Inscripción</button>
         </div>
-
     </div>
 
     <!--------------FORMULARIO-------------->
@@ -103,6 +101,9 @@
             <label for="dni">DNI</label>
             <!--el place holder se llena con lo que se consume de la api-->
             <input type="text" id="dni" name="dni" placeholder="completar con prismic">
+
+            <label for="cuil_cuit" class="enLinea">CUIL/CUIT</label>
+            <input type="text" id="cuil_cuit" name="cuil_cuit" placeholder="completar con prismic">
         </div>
         <div class="fila">
             <label for="nombre">Nombre</label>
@@ -124,63 +125,64 @@
         <div class="fila">
             <label for="fNacimiento">Fecha de Nacimiento</label>
             <input type="date" id="fNacimiento" name="fNacimiento" class="fecha">
+        </div>
+        <div class="fila">
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono">
 
-            <label for="lugarNac" class="enLinea">Lugar de Nacimiento</label>
-            <input type="text" id="lugarNac" name="lugarNac">
-        </div>
-        <div class="fila">
-            <label for="fIngreso">Fecha de Ingreso</label>
-            <input type="date" id="fIngreso" name="fIngreso" class="fecha">
-        </div>
-        <div class="fila">
-            <label for="nombreEscuela" class="nombreEscuela">
-                Nombre Escuela Anterior
-            </label>
-            <input type="text" id="nombreEscuela" name="nombreEscuela">
-        </div>
-        <div class="fila">
-            <label for="fEgreso">Fecha de Egreso</label>
-            <input type="date" id="fEgreso" name="fEgreso" class="fecha">
-        </div>
-        <div class="fila">
-            <label for="anioCorrespondiente">Año a Inscribir</label>
-            <input type="number" id="anioCorrespondiente" name="anioCorrespondiente" min=1 max=5>
+            <label for="email" class="enLinea">E-Mail</label>
+            <input type="email" id="email" name="email">
         </div>
 
-        <!---------SACRAMENTOS-------->
-        <div class="fila contenedor">
-            <span class="titSeccion">Sacramentos</span>
-            <div class="sacramento">
-                <div class="fila" style="margin-top:5px;">
-                    <span class="nombreSacr">Bautismo</span>
-                    <input type="checkbox" id="fueTomadoB" name="fueTomadoB" class="checkbox">
+        <!---------Direccion-------->
+        <div class="fila contenedor direccion">
+            <span class="titSeccion">Dirección</span>
+            <div class="row">
+                <div class="col-md-auto">
+                    <label for="calle" class="etiqueta">Calle</label>
+                    <input type="text" id="calle" name="calle" class="entrada">
                 </div>
-                <div class="fila" style="margin-bottom:5px;">
-                    <input type="date" id="fBautismo" name="fBautismo" class="fecha">
-                    <label for="diocesisB" style="margin-left:30px; width:100px">Diócesis</label>
-                    <input type="text" id="diocesisB" name="diocesisB">
+                <div class="col-md-auto">
+                    <label for="altura" class="etiqueta">Altura</label>
+                    <input type="number" id="altura" name="altura" class="entrada" min=0>
                 </div>
-            </div>
-            <div class="sacramento">
-                <div class="fila" style="margin-top:5px;">
-                    <span class="nombreSacr">Comunión</span>
-                    <input type="checkbox" id="fueTomadoCom" name="fueTomadoCom" class="checkbox">
-                </div>
-                <div class="fila" style="margin-bottom:5px;">
-                    <input type="date" id="fCom" name="fCom" class="fecha">
-                    <label for="diocesisCom" style="margin-left:30px; width:100px">Diócesis</label>
-                    <input type="text" id="diocesisCom" name="diocesisCom">
+                <div class="col-md-auto">
+                    <label for="barrio" class="etiqueta">Barrio</label>
+                    <input type="text" id="barrio" name="barrio" class="entrada">
                 </div>
             </div>
-            <div class="sacramento">
-                <div class="fila" style="margin-top:5px;">
-                    <span class="nombreSacr">Confirmación</span>
-                    <input type="checkbox" id="fueTomadoConf" name="fueTomadoConf" class="checkbox">
+            <div class="row">
+                <div class="col-md-auto">
+                    <label for="piso" class="etiqueta">Piso</label>
+                    <input type="number" id="piso" name="piso" class="entrada" min=0>
                 </div>
-                <div class="fila" style="margin-bottom:5px;">
-                    <input type="date" id="fConf" name="fConf" class="fecha">
-                    <label for="diocesisConf" style="margin-left:30px; width:100px">Diócesis</label>
-                    <input type="text" id="diocesisConf" name="diocesisConf">
+                <div class="col-md-auto">
+                    <label for="dpto" class="etiqueta">Dpto</label>
+                    <input type="text" id="dpto" name="dpto" class="entrada" min=0>
+                </div>
+                <div class="col-md-auto">
+                    <label for="tira" class="etiqueta">Tira</label>
+                    <input type="text" id="tira" name="tira" class="entrada">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-auto">
+                    <label for="modulo" class="etiqueta">Módulo</label>
+                    <input type="text" id="modulo" name="modulo" class="entrada">
+                </div>
+                <div class="col-md-auto">
+                    <label for="localidad" class="etiqueta">Localidad</label>
+                    <input type="text" id="localidad" name="localidad" class="entrada" min=0>
+                </div>
+                <div class="col-md-auto">
+                    <label for="provincia" class="etiqueta">Provincia</label>
+                    <input type="text" id="provincia" name="provincia" class="entrada">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-auto">
+                    <label for="codPostal" class="etiqueta" style="width: auto;">Codigo Postal</label>
+                    <input type="number" id="codPostal" name="codPostal" class="entrada" min=0>
                 </div>
             </div>
         </div>
