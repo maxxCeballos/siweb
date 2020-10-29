@@ -30,9 +30,14 @@
             <span class="nombreInst">Instituto Nuestra Señora de Fátima</span>
         </div>
 
-        <div class="contInfoUtil">
-            <span class="infoUtil">Info Útil</span>
+        <div class="contInfoUtil marquee">
+            <!--span class="infoUtil">Info Útil</span-->
+            <p id="content" class="infoUtil texto" style="animation-duration:10s;">Inicie Sesión para ver eventos próximos</p>
         </div>
+
+        <!--Add buttons to initiate auth sequence and sign out-->
+        <button id="authorize_button" style="display: none;position: absolute;  top: 17px;  left: 830px;">Authorize</button>
+        <button id="signout_button" style="display: none;position: absolute;  top: 17px;  left: 830px;">Sign Out</button>
 
         <div class="contUsr">
             <span class="usr">Usuario</span>
@@ -202,6 +207,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="./assets/scripts/scriptCalendar.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
 </body>
 
 </html>
