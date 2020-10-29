@@ -1,11 +1,11 @@
-nav {
-    position: absolute;
+nav {    
+    float: left;    
+    width: 350px;
+    flex: 1 1 auto;
     /*background-color: rgb(24,67,141);*/
     /*background-color: rgb(30 83 174);*/
     /*background-color: rgb(28 74 166);*/
-    background-color: rgba(24,90,169,1);
-    height: 100%;
-    width: 273px;
+    background-color: rgba(24,90,169,1);    
     border: 1px solid #000000;        
 }
 
