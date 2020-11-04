@@ -1,0 +1,85 @@
+/** {
+    overflow-x: hidden;
+    padding: 0px !important;
+    margin: 0px !important;
+}*/
+
+html {
+    height: 100%;
+}
+
+html, body {
+    overflow: auto;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    /*background: rgb(24,67,141);*/
+    /*background-color: rgba(71,122,209, 0.65);*/
+    /*background-color: rgba(28,74,166,0.4);*/
+    background-color: rgba(24,90,169,0.1);
+    /*background: rgb(15,67,126);*/
+}
+
+.contPpal{
+    flex-grow: 1;
+    display: flex;
+}
+
+.contDerecha{    
+    width: 100%;
+}
+
+.contAux {    
+    left: 290px;    
+    margin: 15px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contTitulo {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    /*background: #E1E1E1;*/
+    background-color: rgba(155,190,231,0.7);
+    /*background-color: rgba(35,170,104, 0.3);*/
+    border-radius: 5px;
+}
+
+.botones {
+    position: relative;
+    display: inline;
+    height: fit-content;    
+    right: 0%;
+}
+
+.titulo {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(25%, -50%);
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.boton {
+    width: 157px;
+    height: 39px;
+    /*background-color: #000000;*/
+    background-color: rgb(24 90 169);
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 15px;
+    color: white;
+    border: none;
+}
