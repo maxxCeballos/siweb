@@ -9,3 +9,14 @@ En este repositorio se encuentra el trabajo Nº2 de la materia Sistemas de Infor
 ## Descripción del desarrollo del Frontend.
 
 ## Conclusiones
+
+
+API BOT : https://rapidapi.com/infradrive-infradrive-default/api/robomatic-ai
+
+Transaccion : Alta Alumno
+
+https://pugjs.org/language/interpolation.html
+
+https://bootsnipp.com/snippets/GXzyP
+
+https://bootsnipp.com/snippets/2zyo
