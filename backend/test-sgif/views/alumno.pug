@@ -115,22 +115,58 @@ script.
         #{ pantalla = 2}
         console.log(#{pantalla});
     }
-    
+
     function searchAlumno(){
 
         var dni = $('#dni').val();
 
-       fetch(`http://localhost:3000/alumno/${dni}`)
-        .then(response => response.json())
-        .then(data => {
-            var alumno = data.alumno.data
-            $('#nombre').val(alumno.nombre[0].text)
-            $('#apellido').val(alumno.apellido[0].text)
-            $('#sexo').val(alumno.sexo)
-            $('lugarNac').val(alumno.lugar_de_nacimiento)
-            $('#fNacimiento').val(alumno.fecha_nacimiento)
-            $('fIngreso').val(alumno.fecha_de_ingreso)
-            $('nombreEscuela').val(alumno.nombreEscuela)
-            $('fEgreso').val(alumno.fecha_de_egreso)
-        });
+        fetch(`http://localhost:3000/alumno/${dni}`)
+            .then(response => response.json())
+            .then(data => {
+                var alumno = data.alumno.data;                
+                $('#nombre').val(alumno.nombre[0].text)
+                $('#apellido').val(alumno.apellido[0].text)
+                $('#sexo').val(alumno.sexo)
+                $('#lugarNac').val(alumno.lugar_de_nacimiento[0].text)
+                $('#fNacimiento').val(alumno.fecha_nacimiento)
+                $('#fIngreso').val(alumno.fecha_de_ingreso)
+                $('#nombreEscuela').val(alumno.nombre_escuela_anterior[0].text)
+                $('#fEgreso').val(alumno.fecha_de_egreso)
+                $('#anioCorrespondiente').val(alumno.ano_correspondiente);
+
+                extraerSacramentos(alumno.sacramentos);
+            });
+    }
+
+    function extraerSacramentos(sacramentos){
+        var bautismo, comunion, confirmacion;
+        if (sacramentos.length > 3) {
+            console.log("hola")
+            return false;
+        };
+        console.log("hola2")
+
+        for (let i =0; i < sacramentos.length; i++){
+            /*console.log(sacramentos[i])*/
+            var sacramento = sacramentos[i];
+            switch (sacramento.nombre_sacramento[0].text){
+                case "Bautismo":
+                    $("#fueTomadoB").prop("checked",sacramento.obtuvo);
+                    $("#fBautismo").val(sacramento.fecha);
+                    $("#diocesisB").val(sacramento.diocesis[0].text);
+                    break;
+                case "Comunión":
+                    $("#fueTomadoCom").prop("checked",sacramento.obtuvo);
+                    $("#fCom").val(sacramento.fecha);
+                    $("#diocesisCom").val(sacramento.diocesis[0].text);
+                    break;
+                case "Confirmación":
+                    $("#fueTomadoConf").prop("checked",sacramento.obtuvo);
+                    $("#fConf").val(sacramento.fecha);
+                    $("#diocesisConf").val(sacramento.diocesis[0].text);
+                break;
+            }
+        }
+
+        return true;
     }
