@@ -1,0 +1,106 @@
+<div class="contDerecha">
+    <!--------------TITULO PAGINA-------------->
+    <div class="contAux">
+        <div class="contTitulo">
+            <span class="titulo">Datos Responsable</span>
+        </div>
+
+        <!--BOTONES IFAZ-->
+        <div class="botones">
+            <button class="boton">Finalizar Inscripción</button>
+        </div>
+    </div>
+
+    <!--------------FORMULARIO-------------->
+    <div class="contFormulario">
+        <div class="fila">
+            <label for="dni">DNI</label>
+            <!--el place holder se llena con lo que se consume de la api-->
+            <input type="text" id="dni" name="dni" placeholder="completar con prismic">
+
+            <label for="cuil_cuit" class="enLinea">CUIL/CUIT</label>
+            <input type="text" id="cuil_cuit" name="cuil_cuit" placeholder="completar con prismic">
+        </div>
+        <div class="fila">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="apellido" class="enLinea">Apellido</label>
+            <input type="text" id="apellido" name="apellido">
+        </div>
+        <div class="fila">
+            <label for="sexo">Sexo</label>
+            <!--completar con lo que viene de prismic-->
+            <select name="sexo" class="input">
+                <option value="">Seleccione</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+            <input type="text" id="sexo" name="sexo" placeholder="Completar con prismic">
+        </div>
+        <div class="fila">
+            <label for="fNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fNacimiento" name="fNacimiento" class="fecha">
+        </div>
+        <div class="fila">
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono">
+
+            <label for="email" class="enLinea">E-Mail</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <!---------Direccion-------->
+        <div class="fila contenedor direccion">
+            <span class="titSeccion">Dirección</span>
+            <div class="row">
+                <div class="col-md-auto">
+                    <label for="calle" class="etiqueta">Calle</label>
+                    <input type="text" id="calle" name="calle" class="entrada">
+                </div>
+                <div class="col-md-auto">
+                    <label for="altura" class="etiqueta">Altura</label>
+                    <input type="number" id="altura" name="altura" class="entrada" min=0>
+                </div>
+                <div class="col-md-auto">
+                    <label for="barrio" class="etiqueta">Barrio</label>
+                    <input type="text" id="barrio" name="barrio" class="entrada">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-auto">
+                    <label for="piso" class="etiqueta">Piso</label>
+                    <input type="number" id="piso" name="piso" class="entrada" min=0>
+                </div>
+                <div class="col-md-auto">
+                    <label for="dpto" class="etiqueta">Dpto</label>
+                    <input type="text" id="dpto" name="dpto" class="entrada" min=0>
+                </div>
+                <div class="col-md-auto">
+                    <label for="tira" class="etiqueta">Tira</label>
+                    <input type="text" id="tira" name="tira" class="entrada">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-auto">
+                    <label for="modulo" class="etiqueta">Módulo</label>
+                    <input type="text" id="modulo" name="modulo" class="entrada">
+                </div>
+                <div class="col-md-auto">
+                    <label for="localidad" class="etiqueta">Localidad</label>
+                    <input type="text" id="localidad" name="localidad" class="entrada" min=0>
+                </div>
+                <div class="col-md-auto">
+                    <label for="provincia" class="etiqueta">Provincia</label>
+                    <input type="text" id="provincia" name="provincia" class="entrada">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-auto">
+                    <label for="codPostal" class="etiqueta" style="width: auto;">Codigo Postal</label>
+                    <input type="number" id="codPostal" name="codPostal" class="entrada" min=0>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

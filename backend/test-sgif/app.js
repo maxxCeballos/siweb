@@ -53,7 +53,7 @@ app.route('/alumno/:uid').get(function(req, res) {
     console.log('lo que me devuelve la query ', alumno)
       
     // Render page
-    res.render('index', {alumno: alumno});
+    res.send({alumno: alumno});
   
   });
 });
