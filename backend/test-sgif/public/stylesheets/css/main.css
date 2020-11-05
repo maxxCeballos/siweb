@@ -20,21 +20,22 @@ body {
     /*background: rgb(24,67,141);*/
     /*background-color: rgba(71,122,209, 0.65);*/
     /*background-color: rgba(28,74,166,0.4);*/
-    background-color: rgba(24,90,169,0.1);
+    background-color: rgba(24, 90, 169, 0.1);
     /*background: rgb(15,67,126);*/
+    letter-spacing: 0;
 }
 
-.contPpal{
+.contPpal {
     flex-grow: 1;
     display: flex;
 }
 
-.contDerecha{    
+.contDerecha {
     width: 100%;
 }
 
-.contAux {    
-    left: 290px;    
+.contAux {
+    left: 290px;
     margin: 15px 15px 0px 15px;
     display: flex;
     justify-content: space-between;
@@ -47,7 +48,7 @@ body {
     width: 300px;
     height: 50px;
     /*background: #E1E1E1;*/
-    background-color: rgba(155,190,231,0.7);
+    background-color: rgba(155, 190, 231, 0.7);
     /*background-color: rgba(35,170,104, 0.3);*/
     border-radius: 5px;
 }
@@ -55,7 +56,7 @@ body {
 .botones {
     position: relative;
     display: inline;
-    height: fit-content;    
+    height: fit-content;
     right: 0%;
 }
 
@@ -82,4 +83,10 @@ body {
     font-size: 15px;
     color: white;
     border: none;
+}
+
+.btnBuscar{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
 }

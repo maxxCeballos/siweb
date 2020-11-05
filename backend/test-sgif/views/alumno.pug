@@ -8,7 +8,7 @@
         <!--BOTONES IFAZ-->
         <div class="botones">
             <button class="boton">Completar Familia</button>
-            <button class="boton">Continuar</button>
+            <button class="boton" onClick="cambioPagina()">Continuar</button>
         </div>
     </div>
 
@@ -17,8 +17,8 @@
         <div class="fila">
             <label for="dni">DNI</label>
             <!--el place holder se llena con lo que se consume de la api-->
-            <input type="text" id="dni" name="dni" placeholder="completar con prismic">
-            <button class="boton" id="searchAlumno" onClick="searchAlumno()">Buscar</button>
+            <input type="text" id="dni" name="dni" placeholder="Ingrese un Dni ...">
+            <button class="btnBuscar boton" id="searchAlumno" onClick="searchAlumno()">Buscar</button>
         </div>
         <div class="fila">
             <label for="nombre">Nombre</label>
@@ -109,7 +109,12 @@
 </div>
 
 script.
-    
+
+    function cambioPagina(){
+        console.log(#{pantalla});
+        #{ pantalla = 2}
+        console.log(#{pantalla});
+    }
     
     function searchAlumno(){
 
