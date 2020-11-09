@@ -50,8 +50,8 @@ function enviarMsj() {
             'Content-Type': 'application/json;charset=utf-8'
         },
         body: JSON.stringify({
-            mensaje: "holaa",
-            usr: "secretaria"
+            mensaje: mensaje,
+            usr: usr
         })
     }).then(response => response.json())
         //agregar respuesta en chat 
