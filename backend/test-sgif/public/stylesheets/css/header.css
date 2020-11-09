@@ -1,0 +1,197 @@
+header {
+    /*Es la barra completa del header*/
+    width: 100%;
+    height: 64px;
+    /*top: 0px;
+    left: 0px;*/
+    /*overflow: hidden;*/
+    background: rgb(31, 155, 95);
+    position: relative;
+    display: block;
+}
+
+.contUsr {
+    width: 150px;
+    height: 49px;
+    /*background: rgb(255, 255, 255);*/
+    position: absolute;
+    overflow: hidden;
+    /*ubicacion*/
+    top: 10.94%;
+    right: 5%;
+    bottom: 12.09%;
+}
+
+.usr {
+    color: rgba(255, 255, 255, 1);
+    /*dimensiones*/
+    width: 126px;
+    /*posicion*/
+    position: absolute;
+    right: 37.56%;
+    top: 10.1%;
+    /*texto*/
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: Bold;
+    font-size: 20px;
+    text-align: right;
+}
+
+.rol {
+    width: 126px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 59.6%;
+    right: 37.56%;
+    font-style: normal;
+    font-family: Roboto;
+    text-transform: uppercase;
+    /*font-weight: Black;*/
+    font-size: 11px;
+    text-align: right;
+}
+
+.contFoto {
+    width: 48px;
+    height: 48px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.fotoUsr {
+    /*FOTOUSUARIO
+    background: url("../images/v45_193.png");*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    position: absolute;
+}
+
+.contNombInst {
+    width: 386px;
+    height: 64px;
+    background-color: rgb(34 170 104);
+    /*overflow: hidden;*/
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+.nombreInst {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    /*white-space: nowrap;*/
+    text-transform: uppercase;
+}
+
+.contInfoUtil {
+    width: 411px;
+    height: 41px;
+    background: rgba(255, 255, 255, 0.87);
+    position: absolute;
+    /*poner padding sino*/
+    /*revisar el absolute,
+     para que se separe respecto al nombre y no a toda la pagina*/
+    top: 12px;
+    left: 399px;
+    overflow: hidden;
+}
+
+.infoUtil {
+    /*with: auto;*/
+    position: absolute;
+    top: 12px;
+    left: 0%;
+    font-family: Roboto;
+    font-size: 12px;
+    text-align: left;
+}
+
+.contOpcs {
+    width: 31px;
+    height: 31px;
+    background: rgba(252, 249, 249, 1);
+    border-radius: 5px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    /*overflow: hidden;*/
+}
+
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+}
+
+.marquee {
+    /*height: 50px;*/
+    overflow: hidden;
+    /*position: relative;
+    background: #fefefe;*/
+    color: #333;
+    border: 1px solid #4a4a4a;
+}
+
+.texto {
+    white-space: nowrap;
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    margin: 0;
+    /*line-height: 50px;
+    text-align: center;*/
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100px);    
+    -moz-animation: scroll-left 2s linear infinite;
+    -webkit-animation: scroll-left 2s linear infinite;
+    animation: scroll-left 50s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(411px);        
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}

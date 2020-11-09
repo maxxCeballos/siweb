@@ -1,0 +1,86 @@
+extends ./layout.pug
+
+block body
+
+    - var pantalla = 1;
+    <header>
+        <div class="contNombInst">
+            <span class="nombreInst">Instituto Nuestra Señora de Fátima</span>
+        </div>
+
+        <div class="contInfoUtil marquee">
+            <!--span class="infoUtil">Info Útil</span-->
+            <p id="content" class="infoUtil texto" style="animation-duration:10s;">Inicie Sesión para ver eventos próximos</p>
+        </div>
+
+        <!--Add buttons to initiate auth sequence and sign out-->
+        <button id="authorize_button" style="display: none;position: absolute;  top: 17px;  left: 830px;">Authorize</button>
+        <button id="signout_button" style="display: none;position: absolute;  top: 17px;  left: 830px;">Sign Out</button>
+
+        <div class="contUsr">
+            <span class="usr">Usuario</span>
+            <span class="rol">Rol</span>
+            <div class="contFoto">
+                <img src="/images/imgs/img_usr.png" class="fotoUsr" alt="foto_usuario">
+            </div>
+        </div>
+
+        <div class="contOpcs">
+            <img src="/images/imgs/ic_menu.png" class="menu" alt="menu">
+        </div>
+    </header>
+
+    <div class="contPpal">
+        <!--------------NAVBAR-------------->
+        <nav>
+            <ul>
+                <li>
+                    <div class="cont_item_nav">
+                        <img src="/images/imgs/item/item1.png" alt="" class="item_nav">
+                    </div>
+                    <span class="texto_nav">Inscribir Alumno</span>
+                </li>
+                <li>
+                    <div class="cont_item_nav">
+                        <img src="/images/imgs/item/item1.png" alt="" class="item_nav">
+                    </div>
+                    <span class="texto_nav">Completar Familia</span>
+                </li>
+                <li>
+                    <div class="cont_item_nav">
+                        <img src="/images/imgs/item/item1.png" alt="" class="item_nav">
+                    </div>
+                    <span class="texto_nav">Registrar Notas Trimestrales</span>
+                </li>
+                <li>
+                    <div class="cont_item_nav">
+                        <img src="/images/imgs/item/item1.png" alt="" class="item_nav">
+                    </div>
+                    <span class="texto_nav">Alta Curso</span>
+                </li>
+            </ul>
+        </nav>
+
+        include ./chat.pug
+
+        if pantalla === 1
+            include ./alumno.pug
+        else 
+            include ./responsable.pug
+    </div>
+
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js",
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj",
+        crossorigin="anonymous")
+
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js",
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx",
+        crossorigin="anonymous")
+
+
+    script(type="text/javascript" src="/javascript/scriptCalendar.js")
+    script(async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" 
+        onreadystatechange="if (this.readyState === 'complete') this.onload()")
+
+    script(type="text/javascript" src="/javascript/chat.js")
+
